@@ -1,5 +1,6 @@
 <template>
   <div>
+    <nav-bar></nav-bar>
     <router-view></router-view>
     <van-tabbar class="tabbarShadow" v-model="tabber.active" route>
       <van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
@@ -10,6 +11,7 @@
   </div>
 </template>
 <script>
+import NavBar from "@/components/common/navbar/NavBar";
 export default {
   name: "App",
   setup() {},
@@ -19,6 +21,9 @@ export default {
         active: 0,
       },
     };
+  },
+  components: {
+    NavBar,
   },
 };
 </script>
