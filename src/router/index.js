@@ -3,6 +3,7 @@ const Home = () => import('@/views/home/Home');
 const Category = () => import('@/views/category/Category');
 const Shopcart = () => import('@/views/shopcart/Shopcart');
 const Profile = () => import('@/views/profile/Profile');
+const Detail = () => import('@/views/detail/Detail');
 
 const routes = [
   {
@@ -15,7 +16,7 @@ const routes = [
   },
   {
     path: '/home',
-    name: '/Home',
+    name: 'Home',
     component: Home,
     meta: {
       title: '图书商城'
@@ -23,7 +24,7 @@ const routes = [
   },
   {
     path: '/category',
-    name: '/Category',
+    name: 'Category',
     component: Category,
     meta: {
       title: '图书商城--分类'
@@ -31,7 +32,7 @@ const routes = [
   },
   {
     path: '/shopcart',
-    name: '/Shopcart',
+    name: 'Shopcart',
     component: Shopcart,
     meta: {
       title: '图书商城--购物车'
@@ -39,10 +40,18 @@ const routes = [
   },
   {
     path: '/profile',
-    name: '/Profile',
+    name: 'Profile',
     component: Profile,
     meta: {
       title: '图书商城--个人中心'
+    }
+  },
+  {
+    path: '/detail',
+    name: 'Detail',
+    component: Detail,
+    meta: {
+      title: '图书商城--商品详情'
     }
   },
 ]

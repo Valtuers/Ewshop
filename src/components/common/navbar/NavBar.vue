@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="图书商城" left-arrow @click-left="goback" />
+    <van-nav-bar title="图书商城" left-arrow @click-left="goback" fixed />
   </div>
 </template>
 
